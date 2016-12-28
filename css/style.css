@@ -1,0 +1,78 @@
+html, body, header, div,
+footer, section, nav, ul, p,
+li, h3, h2 {
+  margin: 0; padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header {
+}
+
+header::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+ul.jazzle-nav {
+  display: inline-block;
+  list-style: none;
+  border-bottom: 2px whitesmoke solid;
+}
+
+
+.jazzle-heading {
+  text-align: center;
+/*background-color: whitesmoke; */
+/*border-bottom-left-radius: 12px 12px; */
+/*border-bottom-right-radius: 12px 12px; */
+  margin-top: 2em;
+  margin-bottom: 2em;
+} 
+
+.jazzle-heading h2 {
+  font-size: 4em;
+}
+
+.jazzle-heading h3 {
+  font-size: 0.8em;
+}
+
+.jazzle-nav li {
+  display: inline-block;
+  padding: 10px 15px;
+  float: left;
+  background-color: whitesmoke;
+  margin: 12px;
+  border-radius: 12px 12px;
+}
+
+.jazzle-nav li#current {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.jazzle-nav li.other {
+  color: white;
+  background-color: whitesmoke;
+  border-radius: 2px 2px;
+}
+
+.jazzle-intro {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+}
