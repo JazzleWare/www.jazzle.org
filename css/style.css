@@ -1,23 +1,14 @@
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
 html, body, header, div,
 footer, section, nav, ul, p,
 li, h3, h2 {
   margin: 0; padding: 0;
-}
-
-html, body {
-  height: 100%;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   max-width: 70%;
   margin: 0 auto;
-  padding-bottom: 4em;
   box-sizing: border-box;
 }
 
@@ -94,16 +85,25 @@ ul.jazzle-nav {
   margin-bottom: 1em;
 }
 
-#e {
-  background-color: black;
+div#editor {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 12px 12px;
+  border: 1px whitesmoke solid;
 }
 
 #usage {
-  background-color: green;
-  height: 45%;
+  position: relative;
+  height: 400px;
 }
 
 footer {
   font-size: 0.5em;
-  height: 4em;
+  border-top: 1px whitesmoke solid;
+  text-align: center;
+  max-width: 40%;
+  margin: 1.25em auto;
 }
