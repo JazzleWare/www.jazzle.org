@@ -1,13 +1,29 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
 html, body, header, div,
 footer, section, nav, ul, p,
 li, h3, h2 {
   margin: 0; padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
   max-width: 70%;
   margin: 0 auto;
+  padding-bottom: 4em;
+  box-sizing: border-box;
+}
+
+section#main {
+  position:relative;
+  height: 100%;
 }
 
 header {
@@ -70,9 +86,24 @@ ul.jazzle-nav {
 }
 
 .jazzle-intro {
-  max-width: 90%;
   margin: 0 auto;
+  max-width: 90%;
+}
+
+.jazzle-intro p {
+  margin-bottom: 1em;
+}
+
+#e {
+  background-color: black;
+}
+
+#usage {
+  background-color: green;
+  height: 45%;
 }
 
 footer {
+  font-size: 0.5em;
+  height: 4em;
 }

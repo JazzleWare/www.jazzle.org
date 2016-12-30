@@ -3,41 +3,52 @@
   <head>
   <!-- TODO: '<meta> content', etc. for better search engine detectability -->
   <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
   </head>
   <body>
-    <header>
-      <div class="jazzle-heading">
-        <h2>Jazzle</h2>
-        <h3>parse ECMAScript with dazzling speed</h3>
-      </div>
+    <section id="main">
+      <header>
+        <div class="jazzle-heading">
+          <h2>Jazzle</h2>
+          <h3>parse ECMAScript with dazzling speed</h3>
+        </div>
+    
+        <nav>
+          <ul class="jazzle-nav">
+            <li id="current">Use</li>
+            <li>Benchmark</li>
+            <li>Run the test suite</li>
+            <li>Download</li>
+            <li>Contibute!</li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section class="jazzle-intro">
+        <p id="first">Jazzle is a new parser for all versions of ECMAScript, itself written in ECMAScript.</p>
+        <p>It obsessively strives to be fully compatible with the ECMAScript specification, and yet,
+        it meets (and in nearly all benchmarks, beats) many other similar parsers currently in production.</p>
+        <p>Its high speed, combined with its ability to catch the errors that won't get caught otherwise,
+        makes it an excellent choice for integration with linters, IDE's, and a myriad of other ECMAScript code
+        assessment tools. On an average 2012 laptop, </p>
+    
+        <p>
+        Try below so you know it,
+        stress-test so you trust it,
+        check the benchmarks and get hibbie-jibbies,
+        and make it more awesome than it already is!
+        </p>
 
-      <nav>
-        <ul class="jazzle-nav">
-          <li id="current">Use</li>
-          <li>Benchmark</li>
-          <li>Run the test suite</li>
-          <li>Download</li>
-          <li>Contibute!</li>
-        </ul>
-      </nav>
-    </header>
+      </section>
 
-    <section class="jazzle-intro">
-      <p>Jazzle is a new parser for all versions of ECMAScript, itself written in ECMAScript.</p>
-      <p>It obsessively strives to be fully compatible with the ECMAScript specification, and yet,
-      it meets (and in nearly all benchmarks, beats) many other similar parsers currently in production.</p>
-      <p>Its high speed, combined with its ability to catch the errors that won't get caught otherwise,
-      makes it an excellent choice for integration with linters, IDE's, and a myriad of other ECMAScript code
-      assessment tools. Who knows, someone might even make a transpiler atop it!</p>
+      <section id="usage">
+<!--    <div id="e">for (var [a] in b()) {
+          let e = [async ({[l]: [...a] = [,]})=&gt;`hello ${12}`]
+        }
+        </div> -->
+      </section>
 
-      <p>
-      Try below so you know it,
-      stress-test so you trust it,
-      check the benchmarks and get hibbie-jibbies,
-      and make it more awesome than it already is!
-      </p>
-    <section name="usage">
-      <!-- TODO -->
     </section>
 
     <footer>
@@ -46,5 +57,16 @@
       Fortunately, all the toll this project took on them is so small as to become negligible after a year or two of extensive psychotherapy.
     </footer>
 
+<!--    <script src="assets/external/ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var editor = ace.edit('editor');
+
+      editor.setTheme('ace/theme/textmate');
+      editor.setBehavioursEnabled(false);
+      editor.setHighlightActiveLine(false);
+      editor.getSession().setMode('ace/mode/javascript');
+      editor.setShowPrintMargin(false); 
+      editor.getSession().setOption("useWorker", false);
+    </script> -->
   </body>
 </html>
