@@ -50,10 +50,13 @@
           editor.setShowPrintMargin(false); 
           editor.getSession().setOption("useWorker", false);
           editor.setReadOnly(readonly);
+          return editor;
         }
 
-        initEditor(ace.edit('editor'), false);
-        initEditor(ace.edit('results'), true);
+        var main = initEditor(ace.edit('editor'), false);
+        var out = initEditor(ace.edit('results'), true);
+
+        main.getSession().on('change', function(e) { out.setValue(main.getValue()); });
       })();
     </script>
   </body>
