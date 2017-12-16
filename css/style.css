@@ -5,7 +5,7 @@ li, h3, h2 {
   box-sizing: border-box;
 }
 
-body {
+body section#main {
   font-family: sans-serif;
   max-width: 70%;
   margin: 0 auto;
@@ -27,24 +27,29 @@ header::after {
 }
 
 nav {
-  text-align: center;
+  position: relative;
   margin-bottom: 2em;
+  text-align: center;
 }
 
 ul.jazzle-nav {
-  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
   list-style: none;
-  border-bottom: 2px whitesmoke solid;
+  display: inline-block;
+
+/*border-bottom: 2px whitesmoke solid;*/
 }
 
 
 .jazzle-heading {
   text-align: center;
+  float: left;
 /*background-color: whitesmoke; */
 /*border-bottom-left-radius: 12px 12px; */
 /*border-bottom-right-radius: 12px 12px; */
-  margin-top: 2em;
-  margin-bottom: 2em;
+/*margin-top: 2em;*/
+/*margin-bottom: 2em;*/
 } 
 
 .jazzle-heading h2 {
@@ -67,7 +72,7 @@ ul.jazzle-nav {
 .jazzle-nav li#current {
   color: black;
   background-color: white;
-  border: none;
+  border: 1px whitesmoke solid;
 }
 
 .jazzle-nav li.other {
@@ -85,7 +90,7 @@ ul.jazzle-nav {
   margin-bottom: 1em;
 }
 
-div#editor {
+#editor, #results {
   right: 0;
   bottom: 0;
   left: 0;
@@ -95,9 +100,16 @@ div#editor {
   border: 1px whitesmoke solid;
 }
 
-#usage {
+section.edit {
+  display: inline-block;
   position: relative;
   height: 400px;
+  width: 48%;
+}
+
+div.editors {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 footer {
